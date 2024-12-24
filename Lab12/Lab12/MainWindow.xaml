@@ -1,0 +1,23 @@
+﻿<Window x:Class="Lab12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="AliceBlue">
+    <Grid>
+        <Label Content="Select Address:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="AddressComboBox"   Margin="10,30,10,0" VerticalAlignment="Top" 
+                  SelectionChanged="AddressComboBox_SelectionChanged"/>
+
+        <Label Content="Shipping Address:" Margin="10,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="ShippingAddressTextBox" Margin="10,90,10,0" VerticalAlignment="Top" 
+                  Height="55" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+        <Button Content="Change Address                                                                        " Margin="0,160,0,0" VerticalAlignment="Top" 
+                Click="ChangeAddress_Click" Background="White" Height="20" RenderTransformOrigin="0.232,0.547"/>
+        <Button Content="Add New Address"  Background="White" Margin="429,160,0,0" VerticalAlignment="Top" 
+                Click="AddAddress_Click"/>
+    </Grid>
+</Window>
