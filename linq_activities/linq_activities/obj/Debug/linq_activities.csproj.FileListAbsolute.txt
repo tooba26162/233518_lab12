@@ -1,0 +1,8 @@
+C:\Users\233582\source\repos\linq_activities\linq_activities\bin\Debug\linq_activities.exe.config
+C:\Users\233582\source\repos\linq_activities\linq_activities\bin\Debug\linq_activities.exe
+C:\Users\233582\source\repos\linq_activities\linq_activities\bin\Debug\linq_activities.pdb
+C:\Users\233582\source\repos\linq_activities\linq_activities\obj\Debug\linq_activities.csproj.AssemblyReference.cache
+C:\Users\233582\source\repos\linq_activities\linq_activities\obj\Debug\linq_activities.csproj.SuggestedBindingRedirects.cache
+C:\Users\233582\source\repos\linq_activities\linq_activities\obj\Debug\linq_activities.csproj.CoreCompileInputs.cache
+C:\Users\233582\source\repos\linq_activities\linq_activities\obj\Debug\linq_activities.exe
+C:\Users\233582\source\repos\linq_activities\linq_activities\obj\Debug\linq_activities.pdb
