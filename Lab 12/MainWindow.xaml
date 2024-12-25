@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp10.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp10"
+        mc:Ignorable="d"
+        Title="Courses" Height="450" Width="800">
+    <Grid>
+        <!-- DataGrid to Display Courses -->
+        <DataGrid x:Name="CoursesDataGrid" AutoGenerateColumns="True" Height="200" Margin="10,10,10,0" VerticalAlignment="Top"/>
+
+        <!-- TextBox for Course Code with Watermark -->
+        <Grid Margin="10,220,0,0" HorizontalAlignment="Left" Width="200" VerticalAlignment="Top">
+            <TextBox x:Name="CodeTextBox" />
+            <TextBlock Text="Course Code" 
+                       IsHitTestVisible="False" 
+                       Foreground="Gray" 
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Bottom"
+                       Visibility="{Binding Text, ElementName=CodeTextBox}" />
+        </Grid>
+
+        <!-- TextBox for Course Name with Watermark -->
+        <Grid Margin="220,220,0,0" HorizontalAlignment="Left" Width="200" VerticalAlignment="Top">
+            <TextBox x:Name="NameTextBox" />
+            <TextBlock Text="Course Name" 
+                       IsHitTestVisible="False" 
+                       Foreground="Gray" 
+                       Margin="5,2,0,0"
+                       VerticalAlignment="Center"
+                       Visibility="{Binding Text, ElementName=NameTextBox}" />
+        </Grid>
+
+        <!-- Button to Add Course -->
+        <Button Content="Add Course" Margin="10,270,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Click="AddCourseButton_Click"/>
+    </Grid>
+</Window>
